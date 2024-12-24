@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta name="yandex-verification" content="812a3650a40a11ab" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Devcrud">
+    <title>Nico</title>
+    <!-- font icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Bootstrap + Meyawo main styles -->
+    <link rel="stylesheet" href="assets/css/meyawo.css">
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+
+    <!-- Page Navbar -->
+    <nav class="custom-navbar" data-spy="affix" data-offset-top="20">
+        <div class="container">
+            <a class="logo" href="#">Nico</a>
+            <ul class="nav">
+                <li class="item">
+                    <a class="link" href="#home">Домой</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#about">Обо мне</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#portfolio">Портфолио</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#contact">Контакты</a>
+                </li>
+                {% block btn %}{% endblock %}
+            </ul>
+            <a href="javascript:void(0)" id="nav-toggle" class="hamburger hamburger--elastic">
+                <div class="hamburger-box">
+                    <div class="hamburger-inner"></div>
+                </div>
+            </a>
+        </div>
+    </nav><!-- End of Page Navbar -->
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(99278385, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/99278385" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+    <!-- page header -->
+    <header id="home" class="header">
+        <div class="overlay"></div>
+        <div class="header-content container">
+            <h1 class="header-title">
+                <span class="up">{% block name %} {% endblock %} привет!</span>
+                <span class="down">Я - Щуцкий Никита Алексеевич</span>
+            </h1>
+            <p class="header-subtitle"> разработчик ПО</p>
+
+            <button class="btn btn-primary"><a
+                    href="https://github.com/ns-58">Мой GitHub</a></button>
+        </div>
+    </header><!-- end of page header -->
+
+    <!-- about section -->
+    <section class="section pt-0" id="about">
+        <!-- container -->
+        <div class="container text-center">
+            <!-- about wrapper -->
+            <div class="about">
+                <div class="about-img-holder">
+                    <img src="assets/imgs/man.png" class="about-img"
+                        alt="load error">
+                </div>
+                <div class="about-caption">
+                    <p class="section-subtitle">Кто я ?</p>
+                    <h2 class="section-title mb-3">Обо мне</h2>
+                    <p>
+                        Мне <script>document.write(new Date().getFullYear() - 2005)</script> лет, я из г. Самара. <br> <br>
+                        В школьные годы увлекался физикой и литературой, участвовал (результативно) в олимпиадах по этим предметам. На протяжении десяти лет профессионально играл в футбол и, вместе со своей командой, дважды выигрывал чемпионат города.
+                         В подростковом возрасте мечтал разрабатывать ядерные реакторы и совсем не интересовался программированием. <br> <br>
+                Я люблю читать русскую и зарубежную художественную литературу, заниматься игровыми видами спорта, исследовать необычные места в родной Самаре и, с недавних пор, в Лен. Области,
+                 а также просто гулять, наслаждаясь в компании дорогих мне людей уникальной архитектурой и неповторимой природой моей великой Отчизны. <br><br>
+        С 2023 года являюсь студентом направления "Программная инженерия" математико-механического факультета СПбГУ.            </p>
+                    <!-- <button class="btn-rounded btn btn-outline-primary mt-4">Download CV</button> -->
+                </div>
+            </div><!-- end of about wrapper -->
+        </div><!-- end of container -->
+    </section> <!-- end of about section -->
+
+    <!-- service section -->
+    <section class="section" id="service">
+        <div class="container text-center">
+            <p class="section-subtitle">Чем я занимаюсь?</p>
+            <h6 class="section-title mb-6">Учебные интересы</h6>
+            <!-- row -->
+            <div class="row">
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="body">
+                            <img src="assets/imgs/lambda.png"
+                                alt="load error"
+                                class="icon">
+                            <h6 class="title">ФП</h6>
+                            <p class="subtitle"> (До создания этого сайта) я писал только на функциональных языках в этом семестре </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="body">
+                            <img src="assets/imgs/comp.png"
+                                alt="load error"
+                                class="icon">
+                            <h6 class="title">Компиляторы</h6>
+                            <p class="subtitle"> В частности, тема моей семестровой практики - CPS IR </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="body">
+                            <img src="assets/imgs/pi.jpg"
+                                alt="load error"
+                                class="icon">
+                            <h6 class="title">Математика</h6>
+                            <p class="subtitle">С соседом-алгебраистом иначе и быть не могло</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="body">
+                            <img src="assets/imgs/eng.png"
+                                alt="load error"
+                                class="icon">
+                            <h6 class="title">Технический анлглийский</h6>
+                            <p class="subtitle">Это база. Тут даже добавить нечего</p>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- end of row -->
+        </div>
+    </section><!-- end of service section -->
+
+    <!-- portfolio section -->
+    <section class="section" id="portfolio">
+        <div class="container text-center">
+            <p class="section-subtitle">Что я сделал?</p>
+            <h6 class="section-title mb-6">Портфолио</h6>
+            <!-- row -->
+            <div class="row">
+                <div class="col-md-4">
+                    <a href="https://github.com/p1onerka/robbing_cowavans" class="portfolio-card">
+                        <img src="assets/imgs/Screenshot from 2024-12-18 19-37-24.png" class="portfolio-card-img"
+                            alt="load error">
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h4>RISC-V compiler</h5>
+                                    <p class="font-weight-normal">Компилятор абстрактного императивного языка в RISC-V ассемблер</p>
+                            </span>
+                        </span>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="https://github.com/spbu-coding-2023/graphs-team-9" class="portfolio-card">
+                        <img class="portfolio-card-img" src="assets/imgs/app_screenshot.jpg" class="img-responsive rounded"
+                            alt="load error">
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h4>Graphs</h5>
+                                    <p class="font-weight-normal">Приложение для анализа графов с богатым набором функциональности</p>
+                            </span>
+                        </span>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a class="portfolio-card" href="https://github.com/invasion-arcade/invasion" >
+                        <img class="portfolio-card-img" src="assets/imgs/invasion.jpg" class="img-responsive rounded"
+                            alt="load error">
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h4>INVASION</h5>
+                                    <p class="font-weight-normal">Windows-аркада, разработанная в рамках школьной проектной деятельности</p>
+                            </span>
+                        </span>
+                    </a>
+                </div>
+            </div><!-- end of row -->
+        </div><!-- end of container -->
+    </section> <!-- end of portfolio section -->
+
+
+    <!-- section -->
+    <section class="section-sm bg-primary" id="contact">
+        <!-- container -->
+        <div class="container text-center text-sm-left">
+            <!-- row -->
+            <div class="row align-items-center">
+                <div class="col-sm offset-md-1 mb-4 mb-md-0">
+                    <h6 class="title text-light">Хотите связаться со мной?</h6>
+                    <p class="m-0 text-light">>>> nshchutskiy@gmail.com</p>
+                </div>
+                <!-- <div class="col-sm offset-sm-2 offset-md-3">
+                    <button class="btn btn-lg my-font btn-light rounded">Hire Me</button>
+                </div> -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </section> <!-- end of section -->
+
+  
+
+
+    <!-- footer -->
+    <div class="container">
+        <footer class="footer">
+            <p class="mb-0">Copyright
+                <script>document.write(new Date().getFullYear())</script> &copy; <a
+                    href="http://www.devcrud.com">DevCRUD</a> Distribution <a
+                    href="https://themewagon.com">ThemeWagon</a>
+            </p>
+            <div class="social-links text-right m-auto ml-sm-auto">
+                <a href="https://github.com/ns-58" class="link"><i class="bi-github"></i></a>
+                <a href="https://t.me/szcz00" class="link"><i class="bi-telegram"></i></a>
+                <a href="https://www.instagram.com/_1.ns_" class="link"><i class="bi-instagram"></i></a>
+                <a href="https://join.skype.com/invite/BQCqufVFLeeC" class="link"><i class="bi-skype"></i></a>
+                <a href="https://timetable.spbu.ru/MATH/StudentGroupEvents/Primary/394782" class="link"><i class="bi-calendar-date"></i></a>
+                
+            </div>
+        </footer>
+    </div> <!-- end of page footer -->
+
+    <!-- core  -->
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+
+    <!-- bootstrap 3 affix -->
+    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+
+    <!-- Meyawo js -->
+    <script src="assets/js/meyawo.js"></script>
+
+</body>
+
+</html>
